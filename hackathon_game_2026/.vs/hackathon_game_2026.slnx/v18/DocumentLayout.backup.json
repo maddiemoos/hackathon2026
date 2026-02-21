@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{B7AD9191-89C0-42FB-BD30-0BD0448A1247}|hackathon_game_2026.vcxproj|solutionrelative:functions.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7AD9191-89C0-42FB-BD30-0BD0448A1247}|hackathon_game_2026.vcxproj|C:\\Users\\lion1\\OneDrive\\Documents\\GitHub\\hackathon2026\\hackathon_game_2026\\header.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B7AD9191-89C0-42FB-BD30-0BD0448A1247}|hackathon_game_2026.vcxproj|solutionrelative:header.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B7AD9191-89C0-42FB-BD30-0BD0448A1247}|hackathon_game_2026.vcxproj|C:\\Users\\lion1\\OneDrive\\Documents\\GitHub\\hackathon2026\\hackathon_game_2026\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{B7AD9191-89C0-42FB-BD30-0BD0448A1247}|hackathon_game_2026.vcxproj|solutionrelative:main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7AD9191-89C0-42FB-BD30-0BD0448A1247}|hackathon_game_2026.vcxproj|C:\\Users\\lion1\\OneDrive\\Documents\\GitHub\\hackathon2026\\hackathon_game_2026\\header.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B7AD9191-89C0-42FB-BD30-0BD0448A1247}|hackathon_game_2026.vcxproj|solutionrelative:header.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "main.c",
               "DocumentMoniker": "C:\\Users\\lion1\\OneDrive\\Documents\\GitHub\\hackathon2026\\hackathon_game_2026\\main.c",
               "RelativeDocumentMoniker": "main.c",
@@ -42,12 +42,12 @@
               "RelativeToolTip": "main.c",
               "ViewState": "AgIAAAcAAAAAAAAAAAAAABwAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2026-02-21T21:16:14.064Z",
+              "WhenOpened": "2026-02-21T23:23:11.941Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "header.h",
               "DocumentMoniker": "C:\\Users\\lion1\\OneDrive\\Documents\\GitHub\\hackathon2026\\hackathon_game_2026\\header.h",
               "RelativeDocumentMoniker": "header.h",
@@ -55,8 +55,7 @@
               "RelativeToolTip": "header.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-02-21T21:26:51.865Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-21T23:23:11.957Z"
             },
             {
               "$type": "Document",
@@ -66,9 +65,9 @@
               "RelativeDocumentMoniker": "functions.c",
               "ToolTip": "C:\\Users\\lion1\\OneDrive\\Documents\\GitHub\\hackathon2026\\hackathon_game_2026\\functions.c",
               "RelativeToolTip": "functions.c",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAB8AAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2026-02-21T21:26:43.278Z",
+              "WhenOpened": "2026-02-21T23:23:11.993Z",
               "EditorCaption": ""
             }
           ]
