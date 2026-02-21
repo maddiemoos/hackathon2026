@@ -1,2 +1,7 @@
 ﻿  main.c
+C:\Users\madma\OneDrive\hackathon2026\hackathon_game_2026\main.c(30,3): warning C4013: 'system' undefined; assuming extern returning int
+C:\Users\madma\OneDrive\hackathon2026\hackathon_game_2026\main.c(35,19): warning C4047: 'function': 'int' differs in levels of indirection from 'int *'
+C:\Users\madma\OneDrive\hackathon2026\hackathon_game_2026\main.c(35,19): warning C4024: 'gamePlay': different types for formal and actual parameter 2
+C:\Users\madma\OneDrive\hackathon2026\hackathon_game_2026\main.c(39,25): warning C4047: 'function': 'int' differs in levels of indirection from 'int *'
+C:\Users\madma\OneDrive\hackathon2026\hackathon_game_2026\main.c(39,25): warning C4024: 'printQuestions': different types for formal and actual parameter 2
   hackathon_game_2026.vcxproj -> C:\Users\madma\OneDrive\hackathon2026\hackathon_game_2026\x64\Debug\hackathon_game_2026.exe
