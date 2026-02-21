@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{B7AD9191-89C0-42FB-BD30-0BD0448A1247}|hackathon_game_2026.vcxproj|solutionrelative:header.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7AD9191-89C0-42FB-BD30-0BD0448A1247}|hackathon_game_2026.vcxproj|C:\\Users\\madma\\OneDrive\\hackathon2026\\hackathon_game_2026\\functions.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{B7AD9191-89C0-42FB-BD30-0BD0448A1247}|hackathon_game_2026.vcxproj|solutionrelative:functions.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B7AD9191-89C0-42FB-BD30-0BD0448A1247}|hackathon_game_2026.vcxproj|C:\\Users\\madma\\OneDrive\\hackathon2026\\hackathon_game_2026\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{B7AD9191-89C0-42FB-BD30-0BD0448A1247}|hackathon_game_2026.vcxproj|solutionrelative:main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7AD9191-89C0-42FB-BD30-0BD0448A1247}|hackathon_game_2026.vcxproj|C:\\Users\\madma\\OneDrive\\hackathon2026\\hackathon_game_2026\\functions.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B7AD9191-89C0-42FB-BD30-0BD0448A1247}|hackathon_game_2026.vcxproj|solutionrelative:functions.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,40 +34,42 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main.c",
+              "DocumentMoniker": "C:\\Users\\madma\\OneDrive\\hackathon2026\\hackathon_game_2026\\main.c",
+              "RelativeDocumentMoniker": "main.c",
+              "ToolTip": "C:\\Users\\madma\\OneDrive\\hackathon2026\\hackathon_game_2026\\main.c",
+              "RelativeToolTip": "main.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-02-21T21:16:14.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "header.h",
               "DocumentMoniker": "C:\\Users\\madma\\OneDrive\\hackathon2026\\hackathon_game_2026\\header.h",
               "RelativeDocumentMoniker": "header.h",
               "ToolTip": "C:\\Users\\madma\\OneDrive\\hackathon2026\\hackathon_game_2026\\header.h",
               "RelativeToolTip": "header.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-02-21T21:26:51.865Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "functions.c",
               "DocumentMoniker": "C:\\Users\\madma\\OneDrive\\hackathon2026\\hackathon_game_2026\\functions.c",
               "RelativeDocumentMoniker": "functions.c",
               "ToolTip": "C:\\Users\\madma\\OneDrive\\hackathon2026\\hackathon_game_2026\\functions.c",
               "RelativeToolTip": "functions.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2026-02-21T21:26:43.278Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "main.c",
-              "DocumentMoniker": "C:\\Users\\madma\\OneDrive\\hackathon2026\\hackathon_game_2026\\main.c",
-              "RelativeDocumentMoniker": "main.c",
-              "ToolTip": "C:\\Users\\madma\\OneDrive\\hackathon2026\\hackathon_game_2026\\main.c",
-              "RelativeToolTip": "main.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2026-02-21T21:16:14.064Z"
+              "WhenOpened": "2026-02-21T21:26:43.278Z",
+              "EditorCaption": ""
             }
           ]
         }
