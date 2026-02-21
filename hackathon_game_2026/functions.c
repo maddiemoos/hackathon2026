@@ -22,32 +22,30 @@
 //	printf("Question were successfuly loaded.");
 //}
 
-void gamePlay(Question bank[], int questionTotal) 
-{
-	if (questionTotal == 0)
-	{
-		printf("There are no questions available. Please add questions before continuing!!\n");
-		return;
-	}
-
+void gamePlay(Question bank[], int count) {
 
 
 
 }
-void editQuestion(Question bank[], int questionTotal) 
-{
+void addQuestion(Question bank[], int* questionTotal) {
+    printf("Enter the question prompt: ");
+    scanf(" %99[^\n]", bank[*questionTotal].prompt);
 
+    // remove newline from fgets
+    bank[*questionTotal].prompt[strcspn(bank[*questionTotal].prompt, "\n")] = '\0';
 
+    printf("Enter the question type: ");
+    scanf("%s", bank[*questionTotal].questionType);
 
+    printf("Enter the correct answer: ");
+    scanf("%s", bank[*questionTotal].correctAnswer);
+
+    (*questionTotal)++;
+
+    printf("Question added successfully.\n");
 }
-void addQuestion(Question bank[], int* questionTotal) 
-{
 
-
-
-}
-void deleteQuestion(Question bank[], int* questionTotal) 
-{
+void deleteQuestion(Question bank[], int* count) {
 
 
 

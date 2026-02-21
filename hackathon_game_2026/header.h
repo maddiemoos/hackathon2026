@@ -12,27 +12,8 @@ typedef struct question
 	int points;
 }Question;
 
-//Description:
-//Precondition:
-//Postcondition:
 void gamePlay(Question bank[], int questionTotal);
-
-//Description:
-//Precondition:
-//Postcondition:
 void addQuestion(Question bank[], int *questionTotal);
-
-//Description:
-//Precondition:
-//Postcondition:
 void deleteQuestion(Question bank[], int* questionTotal);
-
-//Description:
-//Precondition:
-//Postcondition:
 void shuffleQuestions(Question bank[], int questionTotal);
-
-//Description:
-//Precondition:
-//Postcondition:
 void printQuestions(Question bank[], int questionTotal);

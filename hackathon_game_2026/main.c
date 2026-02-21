@@ -2,11 +2,11 @@
 
 int main(void)
 {
-	Question bank[50]; //question bank
-	int questionTotal = 0; //total amount of questions counter basically
+	Question bank[300];
+	int questionTotal = 0;
 	int choice = 0; //user choice for menu
 	
-	do //menu
+	do
 	{
 		printf("                                 _____   _____ _   _  _____   _____ ___________ _____ \n");
 		printf("                                /  __ \\ |_   _| | | ||  ___| /  __ \\  _  |  _  \\  ___|\n");
@@ -58,7 +58,7 @@ int main(void)
 		default:
 			printf("Invalid input. Please try again!\n");
 		}
-	}while (choice != 6); //make sure there is a valid input
+	}while (choice != 6);
 	
 	return 0;
 }
