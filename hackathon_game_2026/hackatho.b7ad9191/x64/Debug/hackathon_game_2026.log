@@ -1,0 +1,6 @@
+﻿  functions.c
+  main.c
+C:\Users\lion1\OneDrive\Documents\GitHub\hackathon2026\hackathon_game_2026\functions.c(8,3): warning C4098: 'loadQuestions': 'void' function returning a value
+C:\Users\lion1\OneDrive\Documents\GitHub\hackathon2026\hackathon_game_2026\functions.c(13,3): warning C4098: 'loadQuestions': 'void' function returning a value
+C:\Users\lion1\OneDrive\Documents\GitHub\hackathon2026\hackathon_game_2026\main.c(15,2): error C2059: syntax error: 'return'
+  Generating Code...
