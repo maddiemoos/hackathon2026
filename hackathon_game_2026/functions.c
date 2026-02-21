@@ -22,22 +22,32 @@
 //	printf("Question were successfuly loaded.");
 //}
 
-void gamePlay(Question bank[], int count) {
+void gamePlay(Question bank[], int questionTotal) 
+{
+	if (questionTotal == 0)
+	{
+		printf("There are no questions available. Please add questions before continuing!!\n");
+		return;
+	}
 
-
-
-}
-void editQuestion(Question bank[], int count) {
-
-
-
-}
-void addQuestion(Question bank[], int* count) {
 
 
 
 }
-void deleteQuestion(Question bank[], int* count) {
+void editQuestion(Question bank[], int questionTotal) 
+{
+
+
+
+}
+void addQuestion(Question bank[], int* questionTotal) 
+{
+
+
+
+}
+void deleteQuestion(Question bank[], int* questionTotal) 
+{
 
 
 
