@@ -5,20 +5,23 @@ void loadQuestions(Question bank[], int* count) {
 	FILE* infile = fopen("question.txt", "r");
 	if (infile == NULL) {
 		printf("did not open files.");
-		return 1;
+		return;
 	}
 
-	if(infile != NULL) {
-		printf("open");
+	while (fscanf(infile, " %[^/n]", bank[*count].prompt) == 1) {
 
+		//type of questions 
+		fscanf(infile, " %s", bank[*count].questionType);
 
-
-
-
-		return 0;
+		//correct Answer
+		fscanf(infile, " %s", bank[*count].correctAnswer);
+		(*count)++;
 	}
 
+	fclose(infile);
+	printf("Question were successfuly loaded.");
 }
+
 void gamePlay(Question bank[], int count) {
 
 
