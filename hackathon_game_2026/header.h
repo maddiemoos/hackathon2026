@@ -12,8 +12,8 @@ typedef struct question
 	int points;
 }Question;
 
-void loadQuestions(Question bank[], int* count);
-void gamePlay(Question bank[], int count);
-void editQuestion(Question bank[], int count);
-void addQuestion(Question bank[], int *count);
-void deleteQuestion(Question bank[], int* count);
+void gamePlay(Question bank[], int questionTotal);
+void addQuestion(Question bank[], int *questionTotal);
+void deleteQuestion(Question bank[], int* questionTotal);
+void shuffleQuestions(Question bank[], int questionTotal);
+void printQuestions(Question bank[], int questionTotal);
