@@ -21,14 +21,14 @@ int main(void)
 		printf("2) Display Questions and Answers\n");
 		printf("3) Add Question\n");
 		printf("4) Delete Question\n");
-		printf("5) Shuffle Questions\n");
+		printf("5) Store Questions\n");
 		printf("6) Load Questions\n");
 		printf("7) Exit\n");
 
 		printf("Please enter your option: ");
 		scanf("%d", &choice);
 		getchar();
-		//system("cls");
+		system("cls");
 
 		switch (choice)
 		{
@@ -49,14 +49,14 @@ int main(void)
 			break;
 
 		case 5:
-			shuffleQuestions(bank, questionTotal);
+			storeQuestion(bank, questionTotal);
 			break;
 
 		case 6:
-			loadQuestions(bank, questionTotal);
+			loadQuestions(bank, &questionTotal);
 			break;
 
-		case 7:
+		case 8:
 			printf("Thanks! Goodbye.\n");
 			break;
 

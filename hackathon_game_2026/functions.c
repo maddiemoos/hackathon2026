@@ -7,7 +7,7 @@ void loadQuestions(Question bank[], int* questionTotal)
 	
     if (infile == NULL) 
     {
-		printf("Did not open files.");
+		printf("Did not open files.\n");
 		return;
 	}
 
@@ -23,6 +23,8 @@ void loadQuestions(Question bank[], int* questionTotal)
         char* token = strtok(line, ",");
         int column = 0;
 
+        char optionsMultipleChoice[200] = "";
+
         while (token != NULL)
         {
             if (column == 0)
@@ -37,12 +39,34 @@ void loadQuestions(Question bank[], int* questionTotal)
 
             else if (column == 2)
             {
-                strcpy(questionAnswer, token);
+                if (strcmp(questionType, "Multiple Choice") == 0)
+                {
+                    strcpy(optionsMultipleChoice, token); //this stores the option for mc
+                }
+
+                else
+                {
+                    strcpy(questionAnswer, token);
+                }
             }
 
             else if (column == 3)
             {
-                points = atoi(token);
+                if (strcmp(questionType, "Multiple Choice") == 0)
+                {
+                    strcpy(questionAnswer, token); //this is the right answer
+                }
+
+                else
+                {
+                    points = atoi(token);
+                }
+
+            }
+            
+            else if (column == 4)
+            {
+                points = atoi(token); //mcq points
             }
 
             column++;
@@ -54,6 +78,7 @@ void loadQuestions(Question bank[], int* questionTotal)
 
         strcpy(data.prompt, prompt);
         strcpy(data.questionType, questionType);
+        strcpy(data.multipleChoiceOption, optionsMultipleChoice);
         strcpy(data.correctAnswer, questionAnswer);
         data.points = points;
 
@@ -63,7 +88,7 @@ void loadQuestions(Question bank[], int* questionTotal)
     }
 
 	fclose(infile);
-	printf("Questions were successfuly loaded!!");
+	printf("Questions were successfuly loaded!!\n");
 }
 
 void gamePlay(Question bank[], int questionTotal)
@@ -90,7 +115,7 @@ void gamePlay(Question bank[], int questionTotal)
 
     while (index < questionTotal)
     {
-        printf("Question %d", index + 1);
+        printf("Question %d ", index + 1);
         printf("%s\n", bank[index].prompt);
 
         if (strcmp(bank[index].questionType, "Multiple Choice") == 0)
@@ -124,6 +149,7 @@ void gamePlay(Question bank[], int questionTotal)
 
             printf("Please enter the letter that corresponds with the correct answer: (A, B, C, D): ");
             scanf(" %49s", usersAnswer);
+            usersAnswer[strcspn(usersAnswer, "\n")] = 0;
 
             if (usersAnswer[0] >= 'a' && usersAnswer[0] <= 'z')
             {
@@ -160,12 +186,9 @@ void gamePlay(Question bank[], int questionTotal)
                 }
             }
 
-            else //checking text question answer if it is correct
+            else
             {
-                printf("Please enter your answer: ");
-                scanf(" %49[^\n]", usersAnswer);
-
-                if (strcmp(usersAnswer, bank[index].correctAnswer) == 0)
+                if (usersAnswer[0] == bank[index].correctAnswer[0])
                 {
                     printf("Correct!! You get +%d point(s)!!\n", bank[index].points);
                     totalPoints += bank[index].points;
@@ -176,26 +199,45 @@ void gamePlay(Question bank[], int questionTotal)
                     printf("Wrong!! The correct answer should have been %s\n", bank[index].correctAnswer);
                 }
             }
+            
+        }
+        else //checking text question answer if it is correct
+        {
+            printf("Please enter your answer: ");
+            scanf(" %49[^\n]", usersAnswer);
 
-            index++;
+            if (strcmp(usersAnswer, bank[index].correctAnswer) == 0)
+            {
+                printf("Correct!! You get +%d point(s)!!\n", bank[index].points);
+                totalPoints += bank[index].points;
+            }
 
-            printf("\n");
+            else
+            {
+                printf("Wrong!! The correct answer should have been %s\n", bank[index].correctAnswer);
+            }
         }
 
-        printf("   _____                                            \n");
-        printf("  / ____|                                           \n");
-        printf(" | |  __  __ _ _ __ ___   ___    _____   _____ _ __ \n");
-        printf(" | | |_ |/ _` | '_ ` _ \\ / _ \\  / _ \\ \\ / / _ \\ '__|\n");
-        printf(" | |__| | (_| | | | | | |  __/ | (_) \\ V /  __/ |   \n");
-        printf("  \\_____|\\__,_|_| |_| |_|\\___|  \\___/ \\_/ \\___|_|   \n");
-        printf("                                                    \n");
-        printf("                                                    \n");
-    
-        printf("You scored %d points total!! Good job!\n", totalPoints);
+        index++;
+
+        
+        
 
     }
 
+    printf("\n");
 
+    printf("   _____                                            \n");
+    printf("  / ____|                                           \n");
+    printf(" | |  __  __ _ _ __ ___   ___    _____   _____ _ __ \n");
+    printf(" | | |_ |/ _` | '_ ` _ \\ / _ \\  / _ \\ \\ / / _ \\ '__|\n");
+    printf(" | |__| | (_| | | | | | |  __/ | (_) \\ V /  __/ |   \n");
+    printf("  \\_____|\\__,_|_| |_| |_|\\___|  \\___/ \\_/ \\___|_|   \n");
+    printf("                                                    \n");
+    printf("                                                    \n");
+
+
+    printf("You scored %d points total!! Good job!\n", totalPoints);
 }
 
 void addQuestion(Question bank[], int* questionTotal) {
@@ -239,16 +281,38 @@ void deleteQuestion(Question bank[], int* questionTotal) {
     (*questionTotal)--;
     printf("Question added successfully.\n");
 }
-void shuffleQuestions(Question bank[], int questionTotal)
-{
 
-}
 void printQuestions(Question bank[], int questionTotal)
 {
     for (int i = 0; i < questionTotal; i++) {
-        printf("Questions %d:\n", i + 1);
-        printf("Questions prompt: %s\n", bank[i].prompt);
-        printf("Types of questions: %s\n", bank[i].questionType);
-        printf("The correct answers %s\n", bank[i].correctAnswer);
+        printf("Question %d: \n", i + 1);
+        printf("Question prompt: %s \n", bank[i].prompt);
+        printf("Types of question: %s \n", bank[i].questionType);
+        printf("The correct answer %s \n", bank[i].correctAnswer);
     }
+}
+
+void storeQuestion(Question bank[], int questionTotal)
+{
+    FILE* outfile = fopen("question.txt", "w");
+
+    if (outfile == NULL) 
+    {
+        printf("Failed to open file.\n");
+    }
+
+    for (int i = 0; i < questionTotal; i++)
+    {
+        if (strcmp(bank[i].questionType, "Multiple Choice") == 0)
+        {
+            fprintf(outfile, "%s,%s,%s,%s,%d\n", bank[i].prompt, bank[i].questionType, bank[i].multipleChoiceOption, bank[i].correctAnswer, bank[i].points);
+        }
+
+        else
+        {
+            fprintf(outfile, "% s,%s,%s,%d\n", bank[i].prompt, bank[i].questionType, bank[i].correctAnswer, bank[i].points);
+        }
+    }
+
+    fclose(outfile);
 }

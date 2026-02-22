@@ -17,6 +17,5 @@ void loadQuestions(Question bank[], int* questionTotal);
 void gamePlay(Question bank[], int questionTotal);
 void addQuestion(Question bank[], int *questionTotal);
 void deleteQuestion(Question bank[], int* questionTotal);
-void shuffleQuestions(Question bank[], int questionTotal);
 void printQuestions(Question bank[], int questionTotal);
 void storeQuestion(Question bank[], int questionTotal);
