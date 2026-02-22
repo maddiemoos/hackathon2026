@@ -8,6 +8,7 @@ typedef struct question
 {
 	char prompt[300];
 	char questionType[10];
+	char multipleChoiceOption[200];
 	char correctAnswer[50];
 	int points;
 }Question;
@@ -18,3 +19,4 @@ void addQuestion(Question bank[], int *questionTotal);
 void deleteQuestion(Question bank[], int* questionTotal);
 void shuffleQuestions(Question bank[], int questionTotal);
 void printQuestions(Question bank[], int questionTotal);
+void storeQuestion(Question bank[], int questionTotal);

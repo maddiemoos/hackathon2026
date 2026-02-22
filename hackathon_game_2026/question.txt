@@ -1,10 +1,10 @@
 What does printf do in C language?,Text,prints output,1
 How do you declare a character variable?,Text,char,1
-Which is the correct symbol for logical AND in C language?,Multiple Choice,&&|&|and|+,&&,1
+Which is the correct symbol for logical AND in C language?,Multiple Choice,&&|&|and|+,A,1
 What would this line of code output when ran: printf("Hello World\n");,Text,Hello World,2
-What piece of syntax is missing from this line of code: scanf("d", &choice);,Multiple Choice,&|$|%|!,2
+What piece of syntax is missing from this line of code: scanf("d", &choice);,Multiple Choice,&|$|%|!,C2
 Write the proper line of code to scan in the data being asked for in this function. Assume choice is the variable being read in: printf("Please enter your age in integer form:\n");,Text,scanf("%d", &choice);,3
 True or False: an integer has a decimal in it. (enter T or F),Multiple Choice,T|F,T,1
 What is the output of 5 + 3 * 2?,Text,11,1
-What header file do you need to use rand?,Multiple Choice,time.h|math.h|stdlib.h|string.h,stdlib.h,2
-How do you increment a variable by 1?,Multiple Choice,x+1|x++|x+|1+x,x++,2
+What header file do you need to use rand?,Multiple Choice,time.h|math.h|stdlib.h|string.h,C,2
+How do you increment a variable by 1?,Multiple Choice,x+1|x++|x+|1+x,B,2

@@ -22,21 +22,22 @@ int main(void)
 		printf("3) Add Question\n");
 		printf("4) Delete Question\n");
 		printf("5) Shuffle Questions\n");
-		printf("6) Exit\n");
+		printf("6) Load Questions\n");
+		printf("7) Exit\n");
 
 		printf("Please enter your option: ");
 		scanf("%d", &choice);
 		getchar();
-		system("cls");
+		//system("cls");
 
 		switch (choice)
 		{
 		case 1:
-			gamePlay(bank, &questionTotal);
+			gamePlay(bank, questionTotal);
 			break;
 
 		case 2:
-			printQuestions(bank, &questionTotal);
+			printQuestions(bank, questionTotal);
 			break;
 
 		case 3:
@@ -52,13 +53,17 @@ int main(void)
 			break;
 
 		case 6:
+			loadQuestions(bank, questionTotal);
+			break;
+
+		case 7:
 			printf("Thanks! Goodbye.\n");
 			break;
 
 		default:
 			printf("Invalid input. Please try again!\n");
 		}
-	}while (choice != 6);
+	}while (choice != 7);
 	
 	return 0;
 }

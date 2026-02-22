@@ -1,9 +1,6 @@
 ﻿  functions.c
-  main.c
-  Generating Code...
-C:\Users\madma\OneDrive\hackathon2026\hackathon_game_2026\main.c(30,3): warning C4013: 'system' undefined; assuming extern returning int
-C:\Users\madma\OneDrive\hackathon2026\hackathon_game_2026\main.c(35,19): warning C4047: 'function': 'int' differs in levels of indirection from 'int *'
-C:\Users\madma\OneDrive\hackathon2026\hackathon_game_2026\main.c(35,19): warning C4024: 'gamePlay': different types for formal and actual parameter 2
-C:\Users\madma\OneDrive\hackathon2026\hackathon_game_2026\main.c(39,25): warning C4047: 'function': 'int' differs in levels of indirection from 'int *'
-C:\Users\madma\OneDrive\hackathon2026\hackathon_game_2026\main.c(39,25): warning C4024: 'printQuestions': different types for formal and actual parameter 2
+C:\Users\madma\OneDrive\hackathon2026\hackathon_game_2026\functions.c(45,26): warning C4013: 'atoi' undefined; assuming extern returning int
+C:\Users\madma\OneDrive\hackathon2026\hackathon_game_2026\functions.c(170,28): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'char *'
+C:\Users\madma\OneDrive\hackathon2026\hackathon_game_2026\functions.c(170,28): warning C4313: 'printf': '%d' in format string conflicts with argument 1 of type 'char *'
+C:\Users\madma\OneDrive\hackathon2026\hackathon_game_2026\functions.c(75,10): warning C4101: 'correctAnswer': unreferenced local variable
   hackathon_game_2026.vcxproj -> C:\Users\madma\OneDrive\hackathon2026\hackathon_game_2026\x64\Debug\hackathon_game_2026.exe
