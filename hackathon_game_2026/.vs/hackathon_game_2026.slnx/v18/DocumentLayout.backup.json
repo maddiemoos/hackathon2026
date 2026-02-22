@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{B7AD9191-89C0-42FB-BD30-0BD0448A1247}|hackathon_game_2026.vcxproj|solutionrelative:functions.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B7AD9191-89C0-42FB-BD30-0BD0448A1247}|hackathon_game_2026.vcxproj|C:\\Users\\madma\\OneDrive\\hackathon2026\\hackathon_game_2026\\question.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{B7AD9191-89C0-42FB-BD30-0BD0448A1247}|hackathon_game_2026.vcxproj|solutionrelative:question.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B7AD9191-89C0-42FB-BD30-0BD0448A1247}|hackathon_game_2026.vcxproj|C:\\Users\\madma\\OneDrive\\hackathon2026\\hackathon_game_2026\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{B7AD9191-89C0-42FB-BD30-0BD0448A1247}|hackathon_game_2026.vcxproj|solutionrelative:main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -34,15 +38,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "header.h",
-              "DocumentMoniker": "C:\\Users\\madma\\OneDrive\\hackathon2026\\hackathon_game_2026\\header.h",
-              "RelativeDocumentMoniker": "header.h",
-              "ToolTip": "C:\\Users\\madma\\OneDrive\\hackathon2026\\hackathon_game_2026\\header.h",
-              "RelativeToolTip": "header.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-02-21T21:26:51.865Z"
+              "DocumentIndex": 1,
+              "Title": "question.txt",
+              "DocumentMoniker": "C:\\Users\\madma\\OneDrive\\hackathon2026\\hackathon_game_2026\\question.txt",
+              "RelativeDocumentMoniker": "question.txt",
+              "ToolTip": "C:\\Users\\madma\\OneDrive\\hackathon2026\\hackathon_game_2026\\question.txt",
+              "RelativeToolTip": "question.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-02-21T23:46:16.104Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -52,14 +57,27 @@
               "RelativeDocumentMoniker": "functions.c",
               "ToolTip": "C:\\Users\\madma\\OneDrive\\hackathon2026\\hackathon_game_2026\\functions.c",
               "RelativeToolTip": "functions.c",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAsAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2026-02-21T21:26:43.278Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "header.h",
+              "DocumentMoniker": "C:\\Users\\madma\\OneDrive\\hackathon2026\\hackathon_game_2026\\header.h",
+              "RelativeDocumentMoniker": "header.h",
+              "ToolTip": "C:\\Users\\madma\\OneDrive\\hackathon2026\\hackathon_game_2026\\header.h",
+              "RelativeToolTip": "header.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-02-21T21:26:51.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "main.c",
               "DocumentMoniker": "C:\\Users\\madma\\OneDrive\\hackathon2026\\hackathon_game_2026\\main.c",
               "RelativeDocumentMoniker": "main.c",
