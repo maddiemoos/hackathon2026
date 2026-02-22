@@ -1,27 +1,69 @@
 #include "header.h"
 
 
-void loadQuestions(Question bank[], int* questionTotal) {
+void loadQuestions(Question bank[], int* questionTotal) 
+{
 	FILE* infile = fopen("question.txt", "r");
-	if (infile == NULL) {
+	
+    if (infile == NULL) 
+    {
 		printf("Did not open files.");
 		return;
 	}
 
-	while (fscanf(infile, " %[^/n]", bank[*questionTotal].prompt) == 1) 
-	{
+	char line[250];
 
-		//type of questions 
-		fscanf(infile, " %s", bank[*questionTotal].questionType);
+    while (fgets(line, sizeof(line), infile) != NULL)
+    {
+        char prompt[300] = "";
+        char questionType[50] = "";
+        char questionAnswer[100] = "";
+        int points = 0;
 
-		//correct Answer
-		fscanf(infile, " %s", bank[*questionTotal].correctAnswer);
-		(*questionTotal)++;
+        char* token = strtok(line, ",");
+        int column = 0;
 
-	}
+        while (token != NULL)
+        {
+            if (column = 0)
+            {
+                strcpy(prompt, token);
+            }
+
+            else if (column = 1)
+            {
+                strcpy(questionType, token);
+            }
+
+            else if (column = 2)
+            {
+                strcpy(questionAnswer, token);
+            }
+
+            else if (column = 3)
+            {
+                points = atoi(token);
+            }
+
+            column++;
+            
+            token = strtok(NULL, ",");
+        }
+
+        Question data;
+
+        strcpy(data.prompt, prompt);
+        strcpy(data.questionType, questionType);
+        strcpy(data.correctAnswer, questionAnswer);
+        data.points = points;
+
+        bank[*questionTotal] = data;
+
+        (*questionTotal)++;
+    }
 
 	fclose(infile);
-	printf("Question were successfuly loaded.");
+	printf("Questions were successfuly loaded!!");
 }
 
 void gamePlay(Question bank[], int questionTotal) 
