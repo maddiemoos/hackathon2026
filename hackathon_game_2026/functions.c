@@ -27,12 +27,10 @@ void gamePlay(Question bank[], int count) {
 
 
 }
+
 void addQuestion(Question bank[], int* questionTotal) {
     printf("Enter the question prompt: ");
     scanf(" %99[^\n]", bank[*questionTotal].prompt);
-
-    // remove newline from fgets
-    bank[*questionTotal].prompt[strcspn(bank[*questionTotal].prompt, "\n")] = '\0';
 
     printf("Enter the question type: ");
     scanf("%s", bank[*questionTotal].questionType);
@@ -56,5 +54,10 @@ void shuffleQuestions(Question bank[], int questionTotal)
 }
 void printQuestions(Question bank[], int questionTotal)
 {
-
+    for (int i = 0; i < questionTotal; i++) {
+        printf("Questions %d:\n", i + 1);
+        printf("Questions prompt: %s\n", bank[questionTotal].prompt);
+        printf("Types of questions: %s\n", bank[questionTotal].questionType);
+        printf("The correct answers %s\n", bank[questionTotal].correctAnswer);
+    }
 }
