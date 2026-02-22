@@ -213,10 +213,31 @@ void addQuestion(Question bank[], int* questionTotal) {
     printf("Question added successfully.\n");
 }
 
-void deleteQuestion(Question bank[], int* count) {
+void deleteQuestion(Question bank[], int* questionTotal) {
+    char target[150];
+    printf("what question do you want to delete");
+    getchar();
 
+    int index = -1;
 
+    //find the question
+    for (int i = 0; i < *questionTotal; i++) {
+        if (strcmp(bank[i].prompt, target) == 0) {
+            index = i;
+            break;
+        }
+    }
+    if (index == -1) {
+        printf("Question not found.\n");
+        return;
+    }
+    // Shift everything left 
+    for (int i = index; i < *questionTotal - 1; i++) {
+        bank[i] = bank[i + 1];
+    }
 
+    (*questionTotal)--;
+    printf("Question added successfully.\n");
 }
 void shuffleQuestions(Question bank[], int questionTotal)
 {
